@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Master branch PDS Tests" parallel="classes" thread-count="8">
+    <parameter name="userName" value="test999"/>
+    <parameter name="key" value="ff3d72b4-1298-48cf-96af-9373b8564e5e"/>
+   	<parameter name="suiteName" value="PDS Idle time max test"/>
+   	<parameter name="applicationUrl" value="https://masterbranch.premieredigital.net" />
+	<parameter name="runPlatform" value="local"/>
+	<parameter name="os" value="OS X 10.10"/>
+	<parameter name="browser" value="chrome"/>
+	<parameter name="browserVersion" value="41"/>
+    <test name="ChromeTests" preserve-order="true">
+	  <packages>
+	  	<package name="net.premieredigital.portal.admin.*"/>
+		<package name="net.premieredigital.portal.ordersview.*"/>
+ 	   	<package name="net.premieredigital.portal.orderitemsview.*"/>
+	   	<package name="net.premieredigital.portal.metadataview.*"/>
+	   	<package name="net.premieredigital.portal.tasksview.*"/>
+	   	<package name="net.premieredigital.portal.masteringview.*"/>
+	  </packages>
+	</test>
+</suite>

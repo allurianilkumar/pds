@@ -1,0 +1,10 @@
+*.class
+target/classes
+target/test-classes
+target/maven-archiver
+target/test-output
+
+# Package Files #
+*.jar
+*.war
+*.ear

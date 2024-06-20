@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="PDS Suites">
+<suite-files>
+	<suite-file path="admin.xml" />
+	<suite-file path="dashboard.xml" />
+</suite-files>
+</suite>

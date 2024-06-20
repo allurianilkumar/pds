@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="PDS Tests" parallel="methods" thread-count="4">
+<!-- <suite name="Selenium Test" verbose="10"> -->
+    <parameter name="userName" value="avisamsetty"/>
+    <parameter name="key" value="23f7ac62-bf24-40d2-81a9-0b888f449415"/>
+    <!-- <parameter name="userName" value="infotechnician"/>
+    <parameter name="key" value="29cba04b-4241-4fd2-9702-16494fa19dd1"/> -->
+   	<parameter name="suiteName" value="PDS Idle time max test"/>
+   	<parameter name="applicationUrl" value="https://singlecommit.premieredigital.net/" />
+<!--    <parameter name="runPlatform" value="local"/> -->
+   	<parameter name="runPlatform" value="saucelabs"/>
+   	<listeners>
+    	<listener class-name="net.premieredigital.portal.SauceTestListener" />
+  	</listeners>
+	<!-- <test name="FirefoxTests" preserve-order="true">
+		<parameter name="os" value="OS X 10.10"/>
+	    <parameter name="browser" value="firefox"/>
+	    <parameter name="browserVersion" value="33"/>
+	   	<packages>
+	   		<package name="net.premieredigital.portal.*" />
+    	</packages>
+	</test> -->
+    <test name="ChromeTests" preserve-order="true">
+	    <parameter name="os" value="OS X 10.10"/>
+	    <parameter name="browser" value="chrome"/>
+	    <parameter name="browserVersion" value="41"/>
+	   	<packages>
+      		<package name="net.premieredigital.portal.*" />
+      		<exclude name="net.premieredigital.portal.reports.dashboardview.*" />
+    	</packages>
+	</test>
+</suite>
